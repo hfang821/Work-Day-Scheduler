@@ -29,8 +29,13 @@ Coming Soon!
 
 ## How to Use:
 1. All the grey blocks represent the past hour blocks, with red being the current hour, and green represents the future hours in a work day.
+![image](https://user-images.githubusercontent.com/95199209/160255243-7f443d54-94c7-4c47-b477-19567cdc8dec.png)
+
 
 2. Click on any text area you wish to edit for setting the completed tasks, goals of the day, hit "Save" and you are good to go!
+
+![image](https://user-images.githubusercontent.com/95199209/160255262-ff9227a8-7f27-462c-bbb2-e19edfa1106d.png)
+
 
 ---
 
