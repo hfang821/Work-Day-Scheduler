@@ -1,9 +1,13 @@
-//1. get the current hour from moment.js, get it in 24hour format (easier to compare)
-//2. compare every block to the current hour (loop through every block)
-//if the hour block is:
-//current (equal to): red
-//future (greater than current): green
-//past (less than current): grey
+/* Steps for this project (JavaScript):
+1. get the current hour from moment.js, get it in 24hour format (easier to compare)
+2. compare every block to the current hour using moment.js (loop through every block)
+if the hour block is:
+current (equal to): red
+future (greater than current): green
+past (less than current): grey
+3. adding event listeners to every button on page, then extract the value of the textarea entered by the user, thus saving in the localStorage
+4. adding localStorage.getItem in the hourBlockEl and link to the id of the textarea to input what's saved in it.
+*/
 
 var currentTime = moment().format('MMMM Do YYYY, h:mm a');
 var currentTimeEl = document.getElementById('currentDay');
@@ -40,10 +44,11 @@ var saveFunction = function (event) {
    var userText = event.target.previousElementSibling.value;
    //this is targeting the id of the textarea element (because it is the sibling element to the button element, which is event.target in this function)
    var currentTextId = event.target.previousElementSibling.id;
-
+    //storing the data into the local storage.
    localStorage.setItem(currentTextId, userText);
 }
 
+//adding event listener for every save button by calling the saveFunction
 for (let i=0; i<saveBtnEl.length; i++){
     saveBtnEl[i].addEventListener('click', saveFunction)
 }
