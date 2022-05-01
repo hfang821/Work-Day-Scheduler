@@ -1,7 +1,7 @@
 # Work Day Scheduler 
 
 ## Link to the Deployed Application:
-https://hfang821.github.io/Work-Day-Scheduler2/
+https://hfang821.github.io/Work-Day-Scheduler-FE/
 
 ## Description:
 
